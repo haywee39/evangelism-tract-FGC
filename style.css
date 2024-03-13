@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
+}
+html{
+  scroll-behavior: smooth;
 }
 
 
@@ -14,29 +16,32 @@
     justify-content: center;
     text-align: center; 
     width:100vw;
-    height: 120vh;
+    height: 100vh;
     color: #fff;   
-    background: url(./bible.jpg) no-repeat fixed center;
-    background-size: cover; 
+    background: url(./2.png);
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center center;
+    
     
 }
 .gift b{
     color: yellow;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .gift h1{ 
   padding-top: 45px;
   font-family: 'splash', cursive;
-  font-size: 55px;
-  text-shadow: red 3px 3px 3px;
+  font-size: 40px;
+  text-shadow: red 2px 2px 2px;
   word-spacing: 20px ;
-  color:yellow;   
-  letter-spacing: 5px;                                                                                                                   ;
+  color:yellow;
+  letter-spacing: 4px;                                                                                                                   ;
 }
 
 .gift p{
-  font-size: 18px;
+  font-size: 16px;
   text-shadow: red 1px 1px 1px;
 }
 .address{
@@ -49,7 +54,11 @@
   text-decoration: none;
   color:#fff;
   text-shadow: red 2px 2px 2px ;
-  background-color: #6495ed;
+  background: linear-gradient(
+        45deg,
+        rgba(236, 74, 29, 0.5),
+        rgba(91, 14, 214, 0.5) 100%
+      );
 }
 
 .address img{
@@ -74,11 +83,16 @@
 
 .Location-WriteUs{
   width: 100vw;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  /* margin-top: 25px; */
+  /* margin-bottom: 25px; */
   display: flex;
   justify-content: space-around;
   margin-right: 40px;
+  background: url(./churchbuilding.jpg);
+    /* background-size: cover;  */
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .map{
   margin-top: 15px;
